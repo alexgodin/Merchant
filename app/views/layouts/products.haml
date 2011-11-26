@@ -1,0 +1,9 @@
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
+  %head
+    %title merchant
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+    %link{:href => "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css", :rel => "stylesheet"}/
+    =javascript_include_tag 'jquery'
+    =javascript_include_tag 'http://js.pusherapp.com/1.9/pusher.min.js'
+    =yield_content :head
+  %body=yield

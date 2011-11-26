@@ -1,0 +1,23 @@
+- content_for :head do
+  =javascript_include_tag 'product_index'
+
+.container
+  .content
+    .page-header
+      %h1
+        Register
+        %small check people out
+    .row
+      .span10
+        %h2 Products
+        %table.zebra-striped
+          %thead
+            %tr
+              %th boom
+          %tbody
+            =partial "products/product", :collection => @products
+        .span4
+        %h3 Total
+        %h1.total
+  %footer
+    %p COPYRIGHT BTW TECH SUPPORT 2011

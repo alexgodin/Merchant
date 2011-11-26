@@ -1,0 +1,6 @@
+%tr
+  %td
+    %input.quantity{:type => "number", :name => "quantity", :min => "1", :style => "height:50px; width:50px;", :value => "1"}
+    %input.name{:type => "hidden", :value => "#{product[0]}"}
+    .btn.addToCart
+      =product[0]
